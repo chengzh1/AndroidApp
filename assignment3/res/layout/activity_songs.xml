@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is /res/layout/main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+		<Button 
+		    android:id="@+id/startPlayerBtn"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/start"/>
+		<Button 
+		    android:id="@+id/restartPlayerBtn"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/restart"/>
+		<Button 
+		    android:id="@+id/pausePlayerBtn"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/pause"/>
+</LinearLayout>

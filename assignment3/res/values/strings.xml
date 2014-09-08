@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">assignment3</string>
+    <string name="action_settings">Settings</string>
+    <string name="artist_name">Leehom Wang</string>
+    <string name="office_website"><u>http://www.wangleehom.com</u></string>
+    <string name="birthday">Date of Birth: 5/17/1976</string>
+    <string name="officeWebsiteTitle">Office Website:</string>
+    <string name="networkTitle">Social NetWork:</string>
+    <string name="networkAddress"><u>https://www.facebook.com/leehom</u></string>
+    <string name="emailTitle">Email:</string>
+    <string name="emailAddress">wangleehom.com@gmail.com</string>
+    <string name="likes">Likes: Music, Movie, Baseball</string>
+    <string name="dislikes">Dislikes: NA</string>
+    <string name="songTitle">Song</string>
+    <string name="song1Name">Song 1</string>
+    <string name="song2Name">Song 2</string>
+    <string name="videoTitle">Video</string>
+    <string name="video1Name">Video 1</string>
+    <string name="video2Name">Video 2</string>
+    <string name="start">Start</string>
+    <string name="restart">Restart</string>
+    <string name="pause">Pause</string>
+    <string name="title_activity_songs">Songs</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_videos">Videos</string>
+    <string name="wallpaperButton">Wallpaper</string>
+    <string name="emailButton">Send Email</string>
+    <string name="title_activity_mailing_list">MailingList</string>
+    <string name="title_activity_wallpaper">Wallpaper</string>
+
+    <string name="mailingListTitle">Mailing List</string>
+    <string name="subject">Subject: </string>
+    <string name="subjectHint">Adding me to mailing list</string>
+    <string name="content">Content: </string>
+    <string name="contentHint">Please add me!</string>
+    
+    <string name="wallpaper_description">LeeHom Wang</string> 
+</resources>

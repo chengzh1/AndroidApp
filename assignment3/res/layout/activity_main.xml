@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Main" >
+
+    <TextView
+        android:id="@+id/artistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/artist_name"
+        android:textSize="20sp" />
+     
+     <ImageView
+          android:id="@+id/profileImage"
+          android:layout_width="110dp"
+          android:layout_height="80dp"
+          android:layout_alignParentRight="true"
+          android:layout_alignTop="@+id/artistName"
+          android:contentDescription="@string/artist_name"
+          android:src="@drawable/img1" />
+	<TextView
+          android:id="@+id/birthday"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@id/artistName"
+          android:layout_below="@id/artistName"
+          android:layout_marginTop="12dp"
+          android:text="@string/birthday"
+          android:textSize="14sp" />
+	 
+	  <TextView
+          android:id="@+id/officeWebsiteTitle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/birthday"
+          android:layout_alignLeft="@id/birthday"
+          android:layout_marginTop="12dp"
+          android:text="@string/officeWebsiteTitle"
+          android:textSize="14sp" />
+	  
+      <TextView
+          android:id="@+id/officeWebsiteAddress"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@id/officeWebsiteTitle"
+          android:layout_below="@id/officeWebsiteTitle"
+          android:text="@string/office_website"
+          android:textSize="14sp" 
+          android:textColor="#2cabe2"/>
+	 <TextView
+          android:id="@+id/emailTitle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@id/officeWebsiteAddress"
+          android:layout_below="@id/officeWebsiteAddress"
+          android:layout_marginTop="12dp"
+          android:text="@string/emailTitle"
+          android:textSize="14sp" />
+
+	 	 <TextView
+	 	     android:id="@+id/emailAddress"
+	 	     android:layout_width="wrap_content"
+	 	     android:layout_height="wrap_content"
+	 	     android:layout_alignBaseline="@id/emailTitle"
+	 	     android:layout_alignBottom="@id/emailTitle"
+	 	     android:layout_centerHorizontal="true"
+	 	     android:text="@string/emailAddress"
+	 	     android:textSize="14sp"/>
+	 	<TextView
+          android:id="@+id/networkTitle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/emailTitle"
+          android:layout_alignLeft="@id/emailTitle"
+          android:layout_marginTop="12dp"
+          android:text="@string/networkTitle"
+          android:textSize="14sp" />
+	 <TextView
+          android:id="@+id/networkAddress"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@id/networkTitle"
+          android:layout_below="@id/networkTitle"
+          android:text="@string/networkAddress"
+          android:textSize="14sp"
+          android:textColor="#2cabe2"  />
+	 <TextView
+          android:id="@+id/likes"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@id/networkAddress"
+          android:layout_below="@id/networkAddress"
+            android:layout_marginTop="12dp"
+          android:text="@string/likes"
+          android:textSize="14sp" />
+	  <TextView
+          android:id="@+id/dislikes"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@id/likes"
+          android:layout_below="@id/likes"
+          android:layout_marginTop="12dp"
+          android:text="@string/dislikes"
+          android:textSize="14sp" />
+
+	  <TextView	      
+	      android:id="@+id/songTitle"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_alignRight="@+id/dislikes"
+	      android:layout_below="@+id/dislikes"
+	      android:layout_marginTop="18dp"
+	      android:text="@string/songTitle"
+	      android:textSize="14sp" />
+		      
+	     <TextView
+	         android:id="@+id/videoTitle"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignBaseline="@+id/songTitle"
+	         android:layout_alignBottom="@+id/songTitle"
+	         android:layout_alignRight="@+id/emailAddress"
+	         android:text="@string/videoTitle"
+	         android:textSize="14sp" />
+
+	     <Button
+	         android:id="@+id/video1Button"
+	         android:layout_width="wrap_content"
+	         android:layout_height="30dp"
+	         android:layout_alignBaseline="@+id/song2Button"
+	         android:layout_alignBottom="@+id/song2Button"
+	         android:layout_toRightOf="@+id/birthday"
+	         android:text="@string/video1Name"
+	         android:textSize="12sp"
+	         android:background="@drawable/custom_button" 
+	         android:onClick="videoWatch"/>
+
+		
+
+		  <Button
+		      android:id="@+id/video2Button"
+		      android:layout_width="wrap_content"
+		      android:layout_height="30dp"
+		      android:layout_alignBaseline="@+id/video1Button"
+		      android:layout_alignBottom="@+id/video1Button"
+		      android:layout_toRightOf="@+id/networkAddress"
+		      android:background="@drawable/custom_button"
+		      android:onClick="videoWatch"
+		      android:text="@string/video2Name"
+		      android:textSize="12sp" />
+
+		  <Button
+		      android:id="@+id/song1Button"
+		      android:layout_width="wrap_content"
+		      android:layout_height="30dp"
+		      android:layout_alignBaseline="@+id/song2Button"
+		      android:layout_alignBottom="@+id/song2Button"
+		      android:layout_alignLeft="@+id/dislikes"
+		      android:background="@drawable/custom_button"
+		      android:onClick="songListen"
+		      android:text="@string/song1Name"
+		      android:textSize="12sp" />
+
+		  <Button
+		      android:id="@+id/song2Button"
+		      android:layout_width="wrap_content"
+		      android:layout_height="30dp"
+		      android:layout_below="@+id/songTitle"
+		      android:layout_marginTop="14dp"
+		      android:layout_toRightOf="@+id/songTitle"
+		      android:background="@drawable/custom_button"
+		      android:onClick="songListen"
+		      android:text="@string/song2Name"
+		      android:textSize="12sp" />
+		   <Button
+		      android:id="@+id/emailButton"
+		      android:layout_width="wrap_content"
+		      android:layout_height="40dp"
+		      android:layout_alignRight="@id/networkTitle"
+		      android:layout_below="@id/song1Button"
+		      android:layout_marginTop="24dp"
+		      android:onClick="emailList"
+		      android:text="@string/emailButton"
+		      android:textSize="12sp" 
+		      android:background="#bf9fec"/>
+		    <Button
+		      android:id="@+id/wallpaperButton"
+		      android:layout_width="wrap_content"
+		      android:layout_height="40dp"
+		      android:layout_alignBaseline="@+id/emailButton"
+		      android:layout_alignBottom="@+id/emailButton"
+		      android:layout_alignRight="@+id/videoTitle"
+		      android:onClick="wallpaperList"
+		      android:text="@string/wallpaperButton"
+		      android:textSize="12sp" 
+		      android:background="#bf9fec"/>
+
+</RelativeLayout>
