@@ -1,0 +1,281 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape">
+    
+  <LinearLayout
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FE9B21"
+        android:textStyle="bold" />
+</LinearLayout>
+  
+ <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+    <TextView
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/purchase_price"
+        android:textSize="15sp"
+        android:textColor="#FE9B21" />
+    <EditText
+        android:id="@+id/edit_purchase_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:hint="200,000"
+        android:textSize="15sp"
+        android:inputType="number" />
+    <requestFocus />
+    <TextView
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:textColor="#FE9B21"/>
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+	 <TextView
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/down_payment"
+        android:textSize="15sp"
+        android:textColor="#FE9B21"/>
+    <EditText
+        android:id="@+id/edit_down_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="number" 
+        android:textSize="15sp"
+        android:hint="20"/>
+    <requestFocus />
+    <TextView
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FE9B21" />
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+	 <TextView
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mortgage_term"
+        android:textSize="15sp"
+        android:textColor="#FE9B21"/>
+    <EditText
+        android:id="@+id/edit_mortgage_term"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:hint="30" />
+    <requestFocus />
+    <TextView
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="yrs"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FE9B21" />
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+	 <TextView
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/interest_rate"
+        android:textSize="15sp"
+        android:textColor="#FE9B21"/>
+    <EditText
+        android:id="@+id/edit_interest_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:inputType="numberDecimal" 
+        android:textSize="15sp"
+        android:hint="4.25"/>
+    <requestFocus />
+    <TextView
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FE9B21" />
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+	 <TextView
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/property_tax"
+        android:textSize="15sp"
+        android:textColor="#FE9B21" />
+    <EditText
+        android:id="@+id/edit_property_tax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:hint="3,000" />
+    <requestFocus />
+    <TextView
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$/yr"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:textColor="#FE9B21"/>
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+	 <TextView
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/property_insurance"
+        android:textSize="15sp" 
+        android:textColor="#FE9B21"/>
+    <EditText
+        android:id="@+id/edit_property_insurance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:textSize="15sp"
+        android:inputType="number"
+        android:hint="15,000" />
+    <requestFocus />
+     <TextView
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$/yr"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FE9B21" />
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+     android:gravity="center_horizontal">
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+	 <TextView
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PMI"
+        android:textSize="15sp" 
+        android:textColor="#FE9B21"/>
+    <EditText
+        android:id="@+id/edit_pmi"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:focusable="false"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:hint="0.52" />
+    <requestFocus />
+     <TextView
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FE9B21" />
+</LinearLayout>
+
+<LinearLayout 
+   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp">
+	 <TextView
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZIP code:"
+        android:textSize="15sp" 
+        android:textColor="#FE9B21"/>
+    <EditText
+        android:id="@+id/edit_zip_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:hint="90001" />
+    <requestFocus />
+</LinearLayout>
+</LinearLayout>
+<LinearLayout
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:gravity="center_horizontal">
+	<TextView
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_payment_date"
+        android:textSize="15sp"
+        android:textColor="#FE9B21" />
+	<Spinner
+        android:id="@+id/spinnerMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	/>
+    <Spinner
+        android:id="@+id/spinnerYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	/>
+    
+</LinearLayout>
+
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_calculate"
+        android:background="@drawable/custom_button"
+        android:textColor="#DEB887" 
+        android:textSize="15sp"
+        android:onClick="sendMessage"/>
+    <TextView
+      android:id="@+id/help"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="15sp"
+      android:onClick="help"
+      android:textSize="15sp"
+      android:text="@string/help_link"/>
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mortgage Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">Mortgage</string>
+    <string name="purchase_price">Purchase Price: </string>
+    <string name="down_payment">Down Payment: </string>
+    <string name="mortgage_term">Mortgage Term: </string>
+    <string name="interest_rate">Interest Rate: </string>
+    <string name="property_tax">Property Tax: </string>
+    <string name="property_insurance">Property Insurance: </string>
+    <string name="first_payment_date">First payment date: </string>
+    <string name="button_calculate">Caculate</string>
+    <string name="title_activity_display_message">Mortgage Calculation Result</string>
+    <string name="help_link">Help</string>
+    <string name="dialog_helplink">Purchase price – This is total sales price of your new home in whole dollars. This amount, less any down payment, will be the amount you borrow from your bank.
+	\n
+	\nDown payment – Enter the percentage of the Purchase price that you plan to pay upfront. If, for example, you plan to make a $25,000 down payment on a $250,000 home, enter 10 here.
+	\n
+	\nMortgage term – Determine the number of years over which you\'d like to pay your mortgage and enter it here. Common values are 10, 15, and 30.
+	\n
+	\nInterest rate – Enter the actual interest percentage your bank will apply to the amount you borrow. Do not include any Private Mortgage Insurance (PMI) percentages your bank may require.
+	\n
+	\nProperty tax – Enter the yearly tax you\'ll pay on the value of your property.
+	\n
+	\nProperty insurance – Determine the yearly amount to insure your property and enter it here.
+	\n
+	\nFirst payment date – From these drop-down menus, select the month and year that your mortgage payments will begin.
+	\n
+	\nReference: http://www.mlcalc.com/
+	</string>
+    <string name="hide">Hide</string>
+
+</resources>
