@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/add_new_run_map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+    <TextView
+        android:text="@string/start_point"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/add_new_run_start_point"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:paddingLeft="3dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:background="@anim/gradient_bg"
+        android:singleLine="true"
+        android:imeOptions="actionDone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/end_point"
+            android:layout_marginRight="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/add_new_run_end_point"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:paddingLeft="3dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@anim/gradient_bg"
+            android:singleLine="true"
+            android:imeOptions="actionDone" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/add_new_run_start_time_month"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:inputType="numberDecimal"
+            android:background="@color/white"
+            android:hint="@string/mm"
+            android:singleLine="true"
+            android:imeOptions="actionDone" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:text="@string/slash"/>
+        <EditText
+            android:id="@+id/add_new_run_start_time_day"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:inputType="numberDecimal"
+            android:background="@color/white"
+            android:hint="@string/dd"
+            android:singleLine="true"
+            android:imeOptions="actionDone" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:text="@string/slash"/>
+        <EditText
+            android:id="@+id/add_new_run_start_time_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_marginRight="2dp"
+            android:inputType="numberDecimal"
+            android:hint="@string/yy"
+            android:background="@color/white"
+            android:singleLine="true"
+            android:imeOptions="actionDone" />
+        <CheckBox
+            android:id="@+id/add_new_run_alarm"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alarm"/>
+    </LinearLayout>
+
+    <TimePicker
+        android:id="@+id/add_new_run_timePicker"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TimePicker>
+
+
+</LinearLayout>

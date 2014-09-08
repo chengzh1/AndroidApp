@@ -1,0 +1,7 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="dialog_preference"
+        android:title="@string/pref_title_term_of_use"/>
+
+</PreferenceScreen>

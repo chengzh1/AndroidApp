@@ -1,0 +1,18 @@
+<resources>
+    <string name="title_activity_account">Settings</string>
+
+    <string name="pref_header_general">Profile</string>
+    <string name="pref_title_user_name">User Name</string>
+    <string name="pref_default_user_name">Yishuang Pang</string>
+    <string name="pref_title_password">Password</string>
+    <string name="pref_default_password">1234</string>
+    <string name="pref_header_about">About</string>
+    <string name="pref_title_term_of_use">Privacy Policy</string>
+    <string name="pref_msg_term_of_use"></string>
+
+    <string name="pref_header_manage_accounts">Manage Accounts</string>
+    <string name="pref_title_manage_accounts">Connect</string>
+    <string name="pref_facebook">facebook</string>
+    <string name="pref_fitbit">Fitbit</string>
+
+</resources>

@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MyActivity" >
+
+    <item android:id="@+id/log_out"
+        android:title="@string/log_out"
+        android:orderInCategory="100"
+        android:showAsAction="always" />
+
+</menu>

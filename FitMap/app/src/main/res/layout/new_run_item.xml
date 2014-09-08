@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="5dp"
+        android:name="com.google.android.gms.maps.MapFragment"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top">
+
+            <Button android:id="@+id/floating_button_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:background="@anim/custom_button_red"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_gravity="left|top" />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/music"
+            android:background="@drawable/music1"
+            android:layout_margin="5dip"
+            android:layout_gravity="left|bottom"/>
+    </FrameLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/info">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/dist"
+            android:background="@drawable/dist" />
+
+        <TextView
+            android:id="@+id/new_rum_item_distance"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cal"
+            android:background="@drawable/cal"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/new_run_item_calories"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+<!--//    <ImageView-->
+<!--//        android:layout_width="wrap_content"-->
+<!--//        android:layout_height="wrap_content"-->
+<!--//        android:id="@+id/music"-->
+<!--//        android:background="@drawable/music"-->
+<!--//        android:layout_marginTop="10dp"-->
+<!--//        android:layout_gravity="center_horizontal"/>-->
+    <ListView
+        android:id="@+id/song_list"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp">
+    </ListView>
+</LinearLayout>

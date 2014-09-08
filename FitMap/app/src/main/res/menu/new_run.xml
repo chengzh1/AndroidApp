@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/new_run_add"
+        android:icon="@drawable/add_btn"
+        android:title="Add"
+        android:showAsAction="ifRoom" />
+    <item android:id="@+id/new_run_back"
+        android:title="Back"
+        android:showAsAction="ifRoom"
+        android:visible="false"/>
+</menu>
+

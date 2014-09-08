@@ -1,0 +1,11 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="@string/pref_fitbit"
+        android:title="@string/pref_title_manage_accounts"
+        android:icon="@drawable/fitbit"
+        android:clickable="true"
+        android:editable="true"
+        android:enabled="true"/>
+
+</PreferenceScreen>

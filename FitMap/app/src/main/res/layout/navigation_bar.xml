@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/navigation_bar"
+             android:background="@null" 
+             android:layout_width="match_parent" 
+             android:layout_height="wrap_content" >
+             
+             <RadioGroup  
+                android:id="@+id/main_tab_group"  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_gravity="bottom"  
+                android:gravity="bottom"  
+                android:background="@drawable/bottom"
+                android:orientation="horizontal" >    
+
+                <RadioButton android:id="@+id/main_tab_daily_run"
+                        android:layout_weight="1"
+                        android:text="@string/daily_run"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        style="@style/TabButton_daily_run" />
+
+                <RadioButton android:id="@+id/main_tab_exercise_track"
+                        android:layout_weight="1"
+                        android:text="@string/exercise_track"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        style="@style/TabButton_exercise_track" />
+
+                <RadioButton android:id="@+id/main_tab_nearby_drink"
+                        android:layout_weight="1" 
+                        android:text="@string/nearby_drink"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        style="@style/TabButton_nearby_drink"/>
+
+                <RadioButton android:id="@+id/main_tab_account"
+                        android:layout_weight="1"
+                        android:text="@string/account"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        style="@style/TabButton_account" />
+
+             </RadioGroup>
+
+        </FrameLayout>
