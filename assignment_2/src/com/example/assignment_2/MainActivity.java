@@ -16,6 +16,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+/* A Mortage Calculater */
 public class MainActivity extends FragmentActivity {
 	/** Called when the activity is first created. */
     private static final String[] months={"Jan","Feb","Mar","Apr","May","Jun","Jul",
