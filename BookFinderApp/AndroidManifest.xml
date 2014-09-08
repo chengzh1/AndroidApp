@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wilddynamos.bookfinder"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_cover"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.MultiWindowActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.post.PostListActivity"
+            android:label="@string/title_activity_tab1"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.mybooks.MyBookListActivity"
+            android:label="@string/title_activity_tab2"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.profile.MyProfileActivity"
+            android:label="@string/title_activity_tab2"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.SignupActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.profile.EditProfileActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.post.PostDetailActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.mybooks.PostNewBookForSaleActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.mybooks.PostOrEditBookActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.mybooks.MyPostDetailActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.mybooks.MyRequestDetailActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.mybooks.RequesterListActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.mybooks.EditMyBookForRentActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.mybooks.EditMyBookForSaleActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.mybooks.MyBuyRequestDetailsActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.mybooks.RequesterProfileActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.mybooks.MyBorrowRequestDetailsActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.ZoomInOutActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wilddynamos.bookfinder.activity.profile.ChangePasswordActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <service android:name="com.wilddynamos.bookfinder.service.NotificationCenter" >
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="4030500" />
+    </application>
+
+</manifest>
